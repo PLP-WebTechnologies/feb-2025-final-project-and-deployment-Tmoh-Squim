@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with Awesome Ecommerce. We'd love to hear from you!">
-    <title>Contact Us - Awesome Ecommerce</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <meta name="description" content="Browse our latest collection of amazing products.">
+    <title>Our Products - Awesome Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <header>
         <div class="logo-container">
@@ -22,63 +23,53 @@
         </nav>
     </header>
 
-    <main class="main-content">
+    <main>
         <section class="page-title">
-            <h2>Contact Us</h2>
-            <p>We're here to help! Reach out to us with any questions or feedback.</p>
-            <section class="contact-details-form">
-                <div class="contact-info">
-                    <h3>Our Office</h3>
-                    <address>
-                        Awesome Ecommerce HQ<br>
-                        123 Biashara Street<br>
-                        Nairobi, Kenya<br>
-                    </address>
-                    <p><strong>Phone:</strong> <a href="tel:+254748143442">+254 748 143 442</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:timooh3214@gmail.com">timooh3214@gmail.com</a></p>
+            <h2>Shop Our Collection</h2>
+            <section id="product-grid">
+                <article class="product-item">
+                    <img src="https://www.mytheresa.com/media/1094/1238/100/03/P00727829.jpg"  alt="Stylish Red T-Shirt">
+                    <h3>Black Leather Shoes</h3>
+                    <p class="price">$19.99</p>
+                    <p>A comfortable and stylish leather shoe made from 100% leather.</p>
+                    <button class="add-to-cart-btn" data-product-id="1" data-product-name="Red Cotton T-Shirt" data-product-price="19.99" data-product-image="https://www.mytheresa.com/media/1094/1238/100/03/P00727829.jpg">Add to Cart</button>
+                </article>
     
-                    <h3>Business Hours</h3>
-                    <p>Monday - Friday: 9:00 AM - 5:00 PM (EAT)</p>
-                    <p>Saturday: 10:00 AM - 2:00 PM (EAT)</p>
-                    <p>Sunday: Closed</p>
-                </div>
+                <article class="product-item">
+                    <img src="https://www.mytheresa.com/media/1094/1238/100/6d/P00953974.jpg" alt="Blue Denim Jeans">
+                    <h3>Blue Denim Jeans</h3>
+                    <p class="price">$49.50</p>
+                    <p>Classic blue denim jeans, perfect for any occasion.</p>
+                    <button class="add-to-cart-btn" data-product-id="2" data-product-name="Blue Denim Jeans" data-product-price="49.50" data-product-image="https://www.mytheresa.com/media/1094/1238/100/6d/P00953974.jpg">Add to Cart</button>
+                </article>
     
-                <div class="contact-form-container">
-                    <h3>Send Us a Message</h3>
-                    <form id="contact-form" action="#" method="POST"> <div class="form-group">
-                            <label for="name">Full Name:</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject:</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
-            </section>
-            <section class="map-section">
-                <h3>Find Us Here</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.81779517099!2d36.82194601475336!3d-1.2863890990648676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b6fe9558!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1620732663830!5m2!1sen!2ske"
-                    width="100%"
-                    height="450"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    title="Our Location in Nairobi">
-                </iframe>
-            </section>
+                <article class="product-item">
+                    <img src="https://m.media-amazon.com/images/I/81WIcyHQ7oL._AC_UY1100_.jpg" alt="Leather Wallet">
+                    <h3>Classic Leather Wallet</h3>
+                    <p class="price">$25.00</p>
+                    <p>A high-quality leather wallet with multiple compartments.</p>
+                    <button class="add-to-cart-btn" data-product-id="3" data-product-name="Classic Leather Wallet" data-product-price="25.00" data-product-price="49.50" data-product-image="https://m.media-amazon.com/images/I/81WIcyHQ7oL._AC_UY1100_.jpg">Add to Cart</button>
+                </article>
+                </section>
         </section>
 
+        
+
+        <aside id="filters">
+            <h3>Filter By:</h3>
+            <div class="filter-group">
+                <h4>Category</h4>
+                <ul>
+                    <li><label><input type="checkbox" name="category" value="apparel"> Apparel</label></li>
+                    <li><label><input type="checkbox" name="category" value="accessories"> Accessories</label></li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <input type="range" id="price-range" name="price-range" min="0" max="100" value="50">
+                <span id="price-value">$50</span>
+            </div>
+        </aside>
     </main>
 
     <footer>
@@ -86,5 +77,6 @@
         <p>Connect with us: <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
     </footer>
 
-    <script src="script.js"></script> </body>
+    <script src="script.js"></script>
+</body>
 </html>
